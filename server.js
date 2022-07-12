@@ -46,22 +46,3 @@ server.on('listening', () => {
 });
 
 server.listen(port);
-
-//*************** 2 ************ */
-// const http = require('http');
-// const app = require('./app');
-
-// app.set('port', process.env.PORT || 5000);
-
-// const server = http.createServer(app);
-
-// server.listen(process.env.PORT || 5000);
-
-// ************************* initial ************
-// const http = require('http');
-
-// const server = http.createServer((req, res) => {
-//   res.end('this is my server response!');
-// });
-
-// server.listen(process.env.PORT || 5000);

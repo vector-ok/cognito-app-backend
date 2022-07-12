@@ -1,4 +1,6 @@
-exports.placeGet = (req, res, next) => {
+const data = require('../data');
+
+exports.placeGet = async (req, res, next) => {
   const place = [
     {
       _id: 'oeihfzesoi',
@@ -15,7 +17,7 @@ exports.placeGet = (req, res, next) => {
       latitude: '11.00090',
     },
   ];
-  res.status(200).json(place);
+  await res.status(200).json(data);
 };
 
 // module.exports = placeGet;
